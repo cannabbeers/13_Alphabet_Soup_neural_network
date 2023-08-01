@@ -19,4 +19,13 @@ Once the new environment is created, you need to activate and then `pip` install
 
               $ pip install "tensorflow<2.11" 
 
+Confirm versions of `tensorflow` and `keras` are compatible by making sure that Tensorflow 2.0 was properly updated with a version < 2.11
+
+  $ python -c "import tensorflow as tf;print(tf.__version__)
+  $ python -c "import tensorflow as tf;print(tf.keras.__version__)"
+
+### Technologies 
+
+
+
 
