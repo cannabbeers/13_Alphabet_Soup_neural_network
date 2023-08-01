@@ -24,8 +24,68 @@ Confirm versions of `tensorflow` and `keras` are compatible by making sure that 
   $ python -c "import tensorflow as tf;print(tf.__version__)
   $ python -c "import tensorflow as tf;print(tf.keras.__version__)"
 
-### Technologies 
+## Technologies 
+
++ Anaconda: It's a platform that simplifies package management and deployment. The original environment setup included TensorFlow 2.11 or higher, which needs to be replaced with an older version for compatibility reasons.
+
+
++ Python: The environment requires a compatible Python 3.8 to 3.11; recommend following TensorFlow Instal Guide which is currently (in Aug 2023), Python 3.9 to ensure that Keras functions properly.  Check the [TensorFlow Installation Page](https://www.tensorflow.org/install/pip) for any updates on best practices now. 
+
++ Conda Environment: Creating a new conda environment (nn_ml) to encapsulate the specific versions of the packages, avoiding conflicts with other projects or system-wide packages.
+
+## Libraries: 
+
++ TensorFlow: open-source machine learning framework developed by Google. The instructions here specify that a version older than 2.11 is needed, and that this older version includes Keras, so no separate installation is required.
+
++ Keras: high-level neural networks API that runs on top of TensorFlow. Since TensorFlow 2.0, Keras has been included in TensorFlow.
++ JupyterLab
++ Matplotlib
++ NumPy
++ Scikit-learn
+
+
+
+## Optimization
+
+Adjust the input data by dropping different features columns to ensure that no variables or outliers confuse the model.
+
+Add more neurons (nodes) to a hidden layer.
+
+Add more hidden layers.
+
+Use different activation functions for the hidden layers.
+
+Add to or reduce the number of epochs in the training regimen.
 
 
 
 
+
+
+   
+## Usage: 
+
+In GitHub, navigate to my repo called `https://github.com/cannabbeers/13_Alphabet_Soup_neural_network/`
+
+Open your Terminal or GitBash window
+
+Create a folder using `mkdir` and `clone` the repo in your new directory
+
+Activate your 'dev' environment for python 3.8 or higher
+
+Enter `git pull` to import and then launch `Jupyter Lab` from Terminal/Git Bash prompt
+
+Open the jupyter lab notebook: `venture_funding_with_deep_learning.ipynb` & run code from the top
+
+---
+
+## Contributors:
+
+Mark Beers: 
+[Linked In](https://www.linkedin.com/in/markwbeers/)
+
+---
+
+## License:
+
+MIT License: A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
