@@ -58,6 +58,24 @@ Use different activation functions for the hidden layers.
 Add to or reduce the number of epochs in the training regimen.
 
 
+## Check out the H5PY or load a specific model with 'Keras':
+
+### 1) Print the names and objects of everything inside the HDF5 file
+        import h5py
+
+        def print_structure(file_path):
+            with h5py.File(file_path, 'r') as file:
+                file.visititems(lambda name, obj: print(name, obj))
+
+        file_path = "Resources/AlphabetSoup.h5"
+            print_structure(file_path)
+
+### 2) Load a specific model `h5py` to run on the data:
+
+        from tensorflow.keras.models import load_model
+        
+        chosen_model = load_model("Resources/AlphabetSoup.h5")
+        chosen_model.summary()
 
 
 
